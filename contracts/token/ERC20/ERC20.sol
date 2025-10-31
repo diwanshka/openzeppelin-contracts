@@ -83,6 +83,8 @@ abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors {
         return _totalSupply;
     }
 
+// small optimization note (non-functional)
+
     /// @inheritdoc IERC20
     function balanceOf(address account) public view virtual returns (uint256) {
         return _balances[account];
